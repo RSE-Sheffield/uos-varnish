@@ -2,8 +2,10 @@
   <a class="visually-hidden-focusable skip-link" href="#main-content">{{ translate.SkipToMain }}</a>
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
-      <div class="large-logo">
-        <img alt="{{#yaml}}{{carpentry_name}}{{/yaml}}" src="{{#site}}{{root}}{{/site}}assets/images/{{#yaml}}{{carpentry_icon}}-logo.svg{{/yaml}}">
+      <div class="large-logo">      
+        <a href="https://www.sheffield.ac.uk">
+          <img alt="University of Sheffield" src="{{#site}}{{root}}{{/site}}assets/images/UOSLogo_Primary_Violet_RGB.svg">
+        </a>
         {{#yaml}}{{#life_cycle}}
         {{#pre_alpha}}
         <abbr class="badge badge-light" title="{{ translate.PreAlphaNote }}" style="background-color: #FF4955; border-radius: 5px">
@@ -117,7 +119,7 @@
       <span class="menu-title">{{ translate.Menu }}</span>
     </button>
     <div class="nav-logo">
-      <img class="small-logo" alt="{{#yaml}}{{carpentry_name}}{{/yaml}}" src="{{#site}}{{root}}{{/site}}assets/images/{{#yaml}}{{carpentry_icon}}-logo-sm.svg{{/yaml}}">
+      <img class="small-logo" alt="University of Sheffield" src="{{#site}}{{root}}{{/site}}assets/images/UOSSheild_Primary_Violet_RGB.svg">
     </div>
     <div class="lesson-title-md">
       {{# site }}{{& title }}{{/ site }}
