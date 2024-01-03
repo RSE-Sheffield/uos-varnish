@@ -24,7 +24,7 @@
         {{/yaml}}
         | <a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}CONTRIBUTING.md">{{ translate.Contributing }}</a> 
         | <a href="{{#yaml}}{{source}}/{{/yaml}}">{{ translate.Source }}</a></p>
-				<p><a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}CITATION">{{ translate.Cite }}</a> | <a href="mailto:{{#yaml}}{{contact}}{{/yaml}}">{{ translate.Contact }}</a> | <a href="https://carpentries.org/about/">{{ translate.About }}</a> | <a href="CODE_OF_CONDUCT.html">{{ translate.ThisLessonCoC }}</a></p>
+				<p><a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}CITATION">{{ translate.Cite }}</a> | <a href="mailto:{{#yaml}}{{contact}}{{/yaml}}">{{ translate.Contact }}</a> | <a href="https://carpentries.org/about/">{{ translate.About }}</a>{{# translate.ThisLessonCoC }} | {{& translate.ThisLessonCoC }}{{/ translate.ThisLessonCoC }}</p>
 			</div>
 			<div class="col-md-5">
         {{#yaml}}{{#license}}
