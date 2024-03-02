@@ -34,12 +34,7 @@ Authors@R: c(
            family = "Nitta",
            role = c("ctb"),
            email = "joelnitta@gmail.com",
-           comment = c(ORCID = "0000-0003-4719-7472")),
-    person(given = "Neil",
-           family = "Shephard",
-           role = c("ctb"),
-           email = "n.shephard@sheffield.ac.uk"
-           comment = c(ORCID = "0000-0001-8301-6857"))
+           comment = c(ORCID = "0000-0003-4719-7472"))
     )
 Description: This package does nothing but contain template HTML CSS and JS files.
 License: MIT + file LICENSE
