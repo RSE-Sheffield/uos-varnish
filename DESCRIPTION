@@ -47,6 +47,7 @@ Authors@R: c(
     person(given = "Neil",
            family = "Shephard",
            role = c("ctb"),
+           email = "n.shephard@sheffield.ac.uk",
            comment = c(ORCID = "0000-0001-8301-6857"))
     )
 Description: This package does nothing but contain template HTML CSS and JS files.
