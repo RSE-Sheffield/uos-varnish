@@ -1,4 +1,4 @@
-Package: uosvarnish
+Package: varnish
 Title: Front-end for The Carpentries Lesson Infrastructure
 Version: 1.0.2.9000
 Authors@R: c(
