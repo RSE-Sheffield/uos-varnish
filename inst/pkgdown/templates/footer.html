@@ -10,24 +10,29 @@
         <p>Lesson developed by <a href="https://rse.shef.ac.uk">RSE</a> &amp; <a href="https://www.sheffield.ac.uk/it-services/research">RIT</a></p>
         {{#yaml}}
         <p>
-        {{^old-url}}
-        <a href="{{#yaml}}{{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
-        {{/old-url}}
-	{{#old-url}}
-        {{#pre-beta-date}}
-        <a href="{{#yaml}}https://carpentries.github.io/workbench/contributor/pre-beta.html?id={{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
-        {{/pre-beta-date}}
-        {{^pre-beta-date}}
-        <a href="{{#yaml}}{{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
-        {{/pre-beta-date}}
-	{{/old-url}}
-        {{/yaml}}
+          {{^old-url}}
+          <a href="{{#yaml}}{{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
+          {{/old-url}}
+          {{#old-url}}
+          {{#pre-beta-date}}
+          <a href="{{#yaml}}https://carpentries.github.io/workbench/contributor/pre-beta.html?id={{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
+          {{/pre-beta-date}}
+          {{^pre-beta-date}}
+          <a href="{{#yaml}}{{source}}/edit/{{branch}}/{{/yaml}}{{file_source}}{{^file_source}}README.md{{/file_source}}">{{ translate.EditOnGH }}</a>
+          {{/pre-beta-date}}
+          {{/old-url}}
+          {{/yaml}}
         | <a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}CONTRIBUTING.md">{{ translate.Contributing }}</a>
-        | <a href="{{#yaml}}{{source}}/{{/yaml}}">{{ translate.Source }}</a></p>
-				<p><a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}{{citation}}">{{ translate.Cite }}</a>
-				| <a href="mailto:{{#yaml}}{{contact}}{{/yaml}}">{{ translate.Contact }}</a></p> <p><a href="https://carpentries.org/about/">{{ translate.About }}</a> | <a href="CODE_OF_CONDUCT.html">{{ translate.ThisLessonCoC }}</a></p>
-			</div>
-			<div class="col-md-5">
+        | <a href="{{#yaml}}{{source}}/{{/yaml}}">{{ translate.Source }}</a>
+        </p>
+		<p>
+          <a href="{{#yaml}}{{source}}/blob/{{branch}}/{{/yaml}}{{citation}}">{{ translate.Cite }}</a>|
+		  <a href="mailto:{{#yaml}}{{contact}}{{/yaml}}">{{ translate.Contact }}</a>|
+          <a href="https://carpentries.org/about/">{{ translate.About }}</a>|
+          <a href="CODE_OF_CONDUCT.html">{{ translate.CoC }}</a>
+        </p>
+		</div>
+		<div class="col-md-5">
         {{#yaml}}{{#license}}
         <p>{{& translate.MaterialsLicensedUnder }}</p>
         {{/license}}{{/yaml}}
