@@ -87,7 +87,7 @@ $color-mode-type: data;
       color: #fff;
     }
   }
-
+  
   svg .icon {
     stroke: var(--bs-body-color);
   }
@@ -658,4 +658,18 @@ div.tab-content {
   border-bottom-color: var(--bs-border-color);
 }
 
+}
+
+// A few UoS specific dark/light theme rules
+// Hide the white university of sheffield logo during light mode
+[data-bs-theme=light] img.dark-only {
+  display: none;
+}
+// Invert images that request it during dark mode
+[data-bs-theme=dark] img.dark-invert {
+  filter: invert(100%);
+}
+// Hide the purple university of sheffield logo during dark mode
+[data-bs-theme=dark] img.light-only {
+  display: none;
 }
